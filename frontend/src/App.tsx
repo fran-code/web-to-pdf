@@ -44,6 +44,7 @@ const WebForm: React.FC = () => {
           dispatch({ type: "success", payload: "PDF downloaded!" })
         }
       })
+      .catch(error => dispatch({ type: "error", payload: "Internal Error" }))
   }
 
   return (
@@ -60,7 +61,7 @@ const WebForm: React.FC = () => {
 }
 
 const App: React.FC = () => {
-
+  console.log("ENV::: ", process.env.NODE_ENV)
   return (
     <>
       <h1 className="title">Web to PDF</h1>

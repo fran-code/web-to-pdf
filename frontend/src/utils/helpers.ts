@@ -28,4 +28,5 @@ export const apiCall = async (
             return response.json()
         }
     })
+    .catch(error => Promise.reject(error))
 }
