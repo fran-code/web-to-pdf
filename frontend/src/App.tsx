@@ -61,7 +61,7 @@ const WebForm: React.FC = () => {
 }
 
 const App: React.FC = () => {
-  console.log("ENV::: ", process.env.NODE_ENV)
+  console.log("ENV::: ", process.env)
   return (
     <>
       <h1 className="title">Web to PDF</h1>
