@@ -61,7 +61,7 @@ const FormLogin: React.FC<IProps> = ({ onSubmit, valuesForm, loading }) => {
     }
 
     return (
-        <div className="getPdfForm">
+        <div className="getPdfForm" data-testid="getPdfForm">
             <Form noValidate onSubmit={(e) => onFormSubmit(e, formState)}>
                 <Form.Group controlId="url">
                     <Form.Label>Url *</Form.Label>
